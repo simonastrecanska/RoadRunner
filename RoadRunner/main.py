@@ -12,7 +12,6 @@ from datetime import datetime
 LOG_FILE = 'game.log'
 
 def reset_log_file_if_new_day(log_file):
-    # Check if the log file exists and the date inside
     if os.path.exists(log_file):
         with open(log_file, 'r') as file:
             first_line = file.readline().strip()
@@ -20,7 +19,6 @@ def reset_log_file_if_new_day(log_file):
                 log_date = first_line.split(' ')[0]
                 current_date = datetime.now().strftime('%Y-%m-%d')
                 if log_date != current_date:
-                    # New day, clear the log file
                     with open(log_file, 'w') as file:
                         pass
 
@@ -42,7 +40,6 @@ if __name__ == '__main__':
     # Reset log file if it's a new day
     reset_log_file_if_new_day(LOG_FILE)
 
-    # Configure logging
     logging.basicConfig(filename=LOG_FILE, level=logging.INFO,
                         format='%(asctime)s - %(levelname)s - %(message)s',
                         datefmt='%Y-%m-%d %H:%M:%S')
