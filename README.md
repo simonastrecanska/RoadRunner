@@ -19,39 +19,6 @@ RoadRunner is a fun and interactive game where you control a turtle character to
    ```bash
    python3 main.py
    ```
-
-Sure, here's the updated README with explanations on why to play the game and the purpose of the `test_game.py` and `test_playthrough.py` files:
-
-### README.md
-
-```markdown
-# RoadRunner
-
-RoadRunner is a fun and interactive game where you control a turtle character to avoid cars and reach the top of the screen to level up.
-
-## How to Run the Game
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/simonastrecanska/RoadRunner.git
-   ```
-2. **Navigate to the project directory:**
-   ```bash
-   cd RoadRunner
-   ```
-
-3. **Install the required dependencies:**
-   Ensure you have Python installed. You can create a virtual environment and install the required packages using:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   pip install -r requirements.txt
-   ```
-
-4. **Run the program:**
-   ```bash
-   python3 main.py
-   ```
    
 ## Explanation of Test Files
 
