@@ -23,11 +23,7 @@ RoadRunner is a fun and interactive game where you control a turtle character to
 ## Explanation of Test Files
 
 ### test_game.py
-This file contains unit tests for various functions and components within the game. The purpose of these tests is to ensure that individual parts of the game logic work correctly in isolation. By running these tests, you can verify that the basic functionality of the game remains intact whenever changes are made.
+This file contains unit tests for various functions and components within the game. The purpose of these tests is to ensure that individual parts of the game logic work correctly in isolation.
 
 ### test_playthrough.py
-This file contains integration tests that simulate complete playthroughs of the game. These tests check the interaction between different components and ensure that the game functions correctly as a whole. They include scenarios such as:
-- Verifying that the player can level up.
-- Ensuring that the game ends when the player collides with a car.
-- Testing the pause and unpause functionality.
-
+This file contains tests that simulate playing the game to ensure everything works together properly.
